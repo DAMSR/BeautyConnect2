@@ -1,0 +1,56 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+        margin-bottom: 0.3em;
+        margin-left: 1em;
+        
+
+        #logo-image {
+            width: 4em;
+            height: auto;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            /* Adjust font size as needed */
+            color: #333;
+            margin: auto;
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+        justify-content: space-around;
+        gap: 5rem;
+
+        .navbar-item {
+            list-style-type: none;
+
+            .navbar-link {
+                text-decoration: none;
+                font-size: 0.9em;
+                color: #333;
+            }
+        }
+    }
+
+    #navbar-left {
+
+        #btn-login {
+            background-color:black;
+            border-radius:.25rem;
+            width: 115px;
+            height: 43px;
+            color: #ffffff;
+            margin-right: 1em;
+        }
+    }
+}
