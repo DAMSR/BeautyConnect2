@@ -1,3 +1,41 @@
-<p>Vous avez déjà utilisé BeautyConnect ?</p>
+<div class="container">
+  <div class="left">
+    <p>Vous avez déjà utilisé BeautyConnect ?</p>
 
+    <div class="form-container">
+      <form>
+        <h2>Se connecter</h2>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Email" [(ngModel)]="email">
+        </div>
+        <div class="form-group">
+          <label>Mot de passe</label>
+          <input type="password" placeholder="Mot de passe" [(ngModel)]="password">
+        </div>
+        <button class="btn-login">Se connecter</button>
+        <div class="line">
+          <span class="line-text">ou</span>
+        </div>
+        <div class="new-account">
+          <span>Nouveau sur BeautyConnect ?</span>
+          <button class="btn-create-account">Créer un compte</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
+  <div class="right">
+    <div class="carousel">
+      <div class="slide">
+        <img src="../../../assets/pexels-ozan-çulha-15859572.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="../../../assets/pexels-bruno-silva-13931330.jpg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="../../../assets/pexels-tokuo-nobuhiro-12717731.jpg" alt="Image 3">
+      </div>
+    </div>
+  </div>
+</div>
