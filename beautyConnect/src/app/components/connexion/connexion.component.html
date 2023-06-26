@@ -32,16 +32,11 @@
   </div>
 
   <div class="right">
-    <div class="carousel" active>
-      <div class="slide active" active>
-        <img src="../../../assets/pexels-ozan-çulha-15859572.jpg" alt="Image 1">
+    <div class="carousel">
+      <div class="img" *ngFor="let slide of slides; let i = index" [ngClass]="{'slide': true, 'active': i === currentSlideIndex}">
+        <img [src]="slide.imageSrc" [alt]="slide.altText">
       </div>
-      <div class="slide" active>
-        <img src="../../../assets/pexels-bruno-silva-13931330.jpg" alt="Image 2">
-      </div>
-      <div class="slide" active>
-        <img src="../../../assets/pexels-tokuo-nobuhiro-12717731.jpg" alt="Image 3">
-      </div>
+      
     </div>
   </div>
-</div>
+  
